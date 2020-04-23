@@ -211,31 +211,55 @@ A lizard is animated by a user’s heart. When a heartrate is first detected, it
 ### Interaction flowchart ###
 ![Image](interaction.jpg)
 # 2. Fabrication Log #
-### 2.1 Materials ###
+## 2.1 Materials ##
 I bought various materials for my project (crossed out items were not used in final):
+
 •	~~WAGO lever wireless connectors~~
+
 •	Electrical tape
+
 •	a second microbit
+
 •	a 10mm red LED
-•	4 small servo motors
-•	1 large servo motor
+
+•	4 small servo motors (SG-90)
+
+•	1 large servo motor (6V)
+
 •	A microbit shield with extra pin holes 
+
 •	~~A MAX30100 pulse sensor~~
+
 •	~~Another pulse sensor~~
+
 •	Another-nother pulse sensor
+
 •	A pulley wheel
+
 •	Crimping tool, electrical tape
+
 •	~~27 Ohm resistor~~
+
 •	1 6v and 3 3v slot battery packs
+
 •	~~Ultrasonic distance sensor~~
+
 •	Plastic glue
+
+
 Some things I already owned
+
 •	The first microbit
+
 •	Assorted screws, nuts and bolts from around the house
+
 •	Thermoplastic beads
+
 •	Binding wire
+
 •	Nylon string
-### 2.2 Connections ###
+
+## 2.2 Connections ##
 The WAGO connectors do not work for 1m wire. All my connections will have to be solderless for the meantime and use twist and tape method from the replication project. 
 ## 2.3 Servo Basics ##
 I already knew how to operate servos from classwork. I used a simple bit of code with button a and b presses corresponding to different servo positions to test functionality of my connections. 
