@@ -1,5 +1,5 @@
 # 1701QCA Making Interaction - Assessment 2 workbook
-## Monitor lizard with human, animate things ##
+## Monitor lizard with human: animate things ##
 1.	**Conceptualisation**
 
 1.1	Design Intent 
@@ -212,7 +212,7 @@ A lizard is animated by a user’s heart. When a heartrate is first detected, it
 ![Image](interaction.jpg)
 # 2. Fabrication Log #
 ## 2.1 Materials ##
-I bought various materials for my project (crossed out items were not used in final):
+**I bought various materials for my project (crossed out items were not used in final):**
 
 •	~~WAGO lever wireless connectors~~
 
@@ -247,7 +247,8 @@ I bought various materials for my project (crossed out items were not used in fi
 •	Plastic glue
 
 
-Some things I already owned
+
+**Some things I already owned:**
 
 •	The first microbit
 
@@ -263,11 +264,19 @@ Some things I already owned
 The WAGO connectors do not work for 1m wire. All my connections will have to be solderless for the meantime and use twist and tape method from the replication project. 
 ## 2.3 Servo Basics ##
 I already knew how to operate servos from classwork. I used a simple bit of code with button a and b presses corresponding to different servo positions to test functionality of my connections. 
+
 First I connected a servo just to the microbit (Input line, Vin and Ground) and found out in [this forum](https://arduino.stackexchange.com/questions/40145/micro-servo-is-not-working-with-arduino-uno) that if the Micro:bit is also connected to a computer via USB, it makes the servo jitter because the voltage is too high. I keep this in mind for the rest of my experimentation, but I will be using an external battery pack for most of it. 
-First connecting the external power source I learned from this [video](https://www.youtube.com/watch?v=9qgABVkvbYI) that the battery pack ground also has to connect to Micro:bit ground. 
+
+Connecting the external power source I learned (from this [video](https://www.youtube.com/watch?v=9qgABVkvbYI)) that the battery pack ground also has to connect to Micro:bit ground. 
+
 ![Image](test1.gif)
+
+
 Adding more servos (four in total, they started jittering again. It appears jittering has everything to do with power. I needed to increase from my 3V to a 6V external power source and they worked again. 
+
 ![Image](test2.gif)
+
+
 In later experiments I kept finding that batteries were running out quite quickly and that was often the reason my servos stopped working suddenly. 
 ## 2.4 Body, neck, propulsion##
 ### Propulsion###
