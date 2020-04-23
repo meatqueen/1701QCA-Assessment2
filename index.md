@@ -278,65 +278,112 @@ Adding more servos (four in total, they started jittering again. It appears jitt
 
 
 In later experiments I kept finding that batteries were running out quite quickly and that was often the reason my servos stopped working suddenly. 
-## 2.4 Body, neck, propulsion##
-### Propulsion###
+## 2.4 Body, neck, propulsion ##
+### Propulsion ###
 Once I got all four servos to work, I realised that it would definitely move in place even with legs because the servo arms touch the ground on the clockwise and anticlockwise rotation, undoing movement. 
+
 ![Image](test3.gif)
+
+
 I understood that my designs involving shifting forward weight with the head were necessary to make it walk. This is supported by the photovore insect project and Monster Chan from my research. 
 The neck tilts right, shifting the weight off the right side via the central propping pivot. At the same time, the front left leg is lifted up and it can move forward. The right front leg that was already forward now pushes off. The inverse is happening with the back legs. When this motion is completed, the neck tilts left and the inverse occurs. The servo angles representing each of these movements are listed on this page. 
+
 ![Image](diary1.jpg)
+
+
 I ditched the tail as another shifting weight (tail 2) as the servo count was getting expensive. However I do retain the tail as a counterweight for all the weight at the front (tail 1). 
+
 Also on this page I investigate how the servos should be angled relative to the body. I nonsensically thought that angling them a certain way would prevent contact on the legs movement back. Option 2 is influenced by the photovore project, but I decided against it because it requires constant contact to push off since its vertical position doesn’t change. I went with option 1.5 because it moves the body back and away so that it moves in a sort of zig zag motion, ideally. 
+
 ![Image](diary2.jpg)
 ![Image](diary3.jpg)
 ### Body ###
-I made the frame out of thermoplastic with a slight upward angle in the sides for the servos to sit on. I held everything down temporarily with screws, and the legs were bound to the servo arm with wire running through drill holes. A large screw supported the body in the middle. The wires were fed through a hook. 
+I made the frame out of thermoplastic with a slight upward angle in the sides for the servos to sit on. I held everything down temporarily with screws, and the legs were bound to the servo arm with wire running through drill holes. A large screw supported the body in the middle. The wires were fed through a hook.
+
 ![Image](body.jpg)
+
+
 I had some issues and I didn’t get to test out how all the legs moved together. At first, I thought it might be something wrong with the Input line connection to one of the pairs of legs as the front right and back left were only twitching, but I soon discovered the ground wire of one of the servos was connected to the input line on the Micro:bit and that was messing with the signal of the other servo on that pin.  To keep In mind for the future.
+
 ![Image](fault.gif)
+
+
 I couldn’t test out how well this body moved. In the process of connecting one of the servos with the leg I broke it. Another servo had a gear that was thicker than all the little plastic arms that it came with. I forced one of them on it, which widened the arm. I forgot this and later when the last arm I had left was too loose for the last servo and I used a screw to secure it. I guess I used the wrong screw, because it loosened the gears inside the servo and I couldn’t fix it. I bought another one later, but for now, there’s how the front legs move without a neck.
+
 ![Image](twoleg.gif)
 ![Image](servocode2.png)
 ### Neck ###
+
 The neck saw some design iterations from the original. I realised the original bike chain design wouldn’t turn evenly through the spine, and that how well it turned greatly depended on the friction between the pieces. This was too much precision for me.
+
 ![Image](neck3.jpg)
 ![Image](neck.jpg)
+
+
 I changed the design modelling it after my friend’s crocodile rattle toy like this one:
 ![Image](croc.jpg)
 ![Image](neck2.jpg)
+
+
 I thought I could skimp out on work just by connecting the plates with thread, but there was too much rotational movement and I realised I would have to adhere to the original crocodile with a strip of canvas running through the middle as it only has one axis of movement.
 ![Image](neckfail.jpg)
 ![Image](neckfail.gif)
+
+
 I used super glue to join the neck pieces to the canvas.
 ![Image](crocneck.jpg)
 ![Image](crocneck3.gif)
-In my plans, the degrees for left and right were a bit extreme (45 and 135). After settled for an average between those and neutral (90) and it worked well. 
-![Image](neckcode.png)
+
+
 Although I had to add a supporting wire to the neck. The neck tended to curve back so much that when the servo turned to the other side it didn’t follow. It also bowed too much. 
 ![Image](neckbad.gif)
+
+
 The supporting wire was quite a nice result. It has a good bobble to it.
 ![Image](bobble.jpg)
 ![Image](bobble.gif)
+
+
+In my plans, the degrees for left and right were a bit extreme (45 and 135). After settled for an average between those and neutral (90) and it worked well. 
+![Image](neckcode.png)
 ## 2.5 Pulley tension ##
 The pulley works by threading nylon string through the joints and loosening or tightening it up with a stronger motor (6V) with a disc. When it’s tight, the joints come together rigid in a lock and key fashion. The string is guided through the body with eye screws. In my original sketches this lock and key was round.
+
 ![Image](pulleyplan.jpg)
-The sphere was too slippery though and even while rigid the limb rotated. 
+
+
+The sphere was too slippery though and even while rigid the limb rotated.
+
 ![Image](sphere.gif)
+
+
 Next I tried a cube lock and key, but it turned out too tight and would slot correctly without effort from me. It is a good lego-style slot in though, quite strong and may be useful in future projects. 
 ![Image](square.gif)
+
+
 Lastly I went for in-between: a pyramid lock and key (lock indented with edge of sharpener). To my surprise this worked. The leg is soft when the pulley is at the original position, and tight enough that it can bring the lizard up off the ground I believe when the pulley is at maximum (180) position. 
+
 ![Image](triangle.gif)
 ![Image](puleycode1.png)
 ## 2.6 LED ##
 The 1cm LED that I bought is very bright as promised. It will diffuse quite well through the lizard’s skin. But I did my maths wrong after all. The guy at the store who helped me find the 27 ohm resistor that I thought I needed according to my maths said that one should only need a 47 ohm resistor according to his book. 
+
 The maths I did was influenced by this [site]( https://www.evilmadscientist.com/2012/resistors-for-leds/). 
-There is a 2.4V drop according to the manufacturer
-I’m bringing that down from 3V
-3 – 2.4 = 0.6V
-V = I*R 
-0.6 / 0.025 (suggested value) = R 
-R = 24 ohms
-Oh well! It definitely works with 47ohm.
+
+_There is a 2.4V drop according to the manufacturer._
+
+_I’m bringing that down from 3V_
+
+_3 – 2.4 = 0.6V_
+
+_V = I*R _
+
+_0.6 / 0.025 (suggested value) = R _
+
+_R = 24 ohms_
+
+_Oh well! It definitely works with 47ohm._
+
 Some basic loops that look like a heart:
 ![Image](LEDcode1.png)
 ## 2.7 Heart Module ##
