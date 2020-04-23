@@ -178,7 +178,7 @@ I consulted the opinions of others, presenting them with options and asking them
 In the define stage, I considered the most important aspects of my project, selected and refined the concept.  
 
 
-**Life/death binary aesthetics**
+_Life/death binary aesthetics_
 
 The lizard needed to look and feel alive when you connect it to your body. I determined that the best way to communicate that a creature is being animated is for it to be dead in the first place: a binary was the most important element of the lizard’s behaviour. The robot companion article also recommended making your robot vulnerable and what better way than to give the power to give and take the life of this lizard. 
 
@@ -186,7 +186,7 @@ The lizard needed to look and feel alive when you connect it to your body. I det
 I imagined what can communicate the binary. Visual aids like LEDs and audio aids like speakers came to mind, but they were only sufficient as a supporting role. Concept 2 came into play here with the slumping over. I envisioned a pulley system being implemented, influenced by push puppet mechanisms. I also considered that I could integrate a small circulatory system on the walking lizard but decided that was not feasible with the time and resources I had available. Concept 2 would also be too difficult because it deals predominantly with liquids and pressure.
 
 
-**Gait and movement mechanisms**
+_Gait and movement mechanisms_
 
 My lizard needed to move in a way that seemed intended if I couldn’t make it walk, but ideally it should walk. The walking lizard will either have to use an ultra-sonic distance sensor or walk in a circle. Latter may be necessary depending on the range of the radio signal. I’m reluctant to allow the user to control the lizard’s direction of movement. It needs to be just enough to be engaging but not excessive because the work is about an involuntary process.
 
@@ -194,14 +194,14 @@ I considered whether it has to move on legs at all. I determined it does because
 I decided if I couldn’t make it walk, I would rather make it “dance”, possibly incorporating a cooperative element as compensation for engagement.  
 
 
-**Heartrate measurement**
+_Heartrate measurement_
 
 The heart rate sensor needs to be accurate enough that there is a clear “beat” and “no beat” that can be counted towards BPM. This is true for any of the concepts. 
 
 It needs to move independently from the user and heart rate sensor because it is a separate living being, so I will use radio between two Micro:bits. 
 
 
-_Below is a diagram illustrating my selection process, resolution of anticipated issues and the influence of other concepts on my selected concept._
+**_Below is a diagram illustrating my selection process, resolution of anticipated issues and the influence of other concepts on my selected concept._**
 ![Image](selection.jpg)
 
 ## 1.4 Final design concept ##
