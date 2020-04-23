@@ -1,19 +1,33 @@
 # 1701QCA Making Interaction - Assessment 2 workbook
 ## Monitor lizard with human, animate things ##
 1.	**Conceptualisation**
+
 1.1	Design Intent 
+
 1.2	Research
+
 1.3	Design concepts
+
 1.4	Final Design
+
 2.	**Fabrication Log**
+
 2.1	Materials 
+
 2.2	Connections
+
 2.3	Servos 
+
 2.4	Body, neck, propulsion
+
 2.5	Pulleys 
+
 2.6	LED
+
 2.7	Heart module
+
 2.8	Final Code
+
 3.	**Steps towards final**
 
 #1. Conceptualisation #
