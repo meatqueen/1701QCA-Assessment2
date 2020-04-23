@@ -94,8 +94,8 @@ Very similar to Heart Bot, except here the waveforms are drawn by a drawing bot 
 I believe I offer quite a different outlook on heart rate to this and the previous two projects. I do not believe heart rate being unique has much to offer aside from novelty in repetition. 
 
 ### Related project 7 ###
-[**Push puppets**](https://www.youtube.com/watch?v=F0php4pwrZc =250x250)
-![Image](pushpuppet.JPG)
+[**Push puppets**](https://www.youtube.com/watch?v=F0php4pwrZc)
+![Image](pushpuppet.JPG | width=100)
 
 This is less of a concept and more of an existing design mechanism in the toy market that I’m drawing on. It was important in figuring out how I would slump over my lizard (“dead mode”) in concept 2 and later in the final project. Keeping strings that run through hard pieces taught is the mechanism that I settled on that I achieved with a pulley. Without my previous interaction with these toys I wouldn’t have this option available to me, even if it turns out that I can’t use it. 
 
@@ -133,50 +133,69 @@ My friend also suggested the cooperative concept (like concept 4)- a car which e
 ## 1.3 Design Concepts ##
 ### Design concept 1: Chosen concept ###
 Concept 1: A lizard that crawls in time/half time with your heartbeat.
+
 _**Pros**: movement is a good link of heartbeat = animation. Perfect execution is not necessary for a functioning execution. It is moderately engaging, especially if the lizard can avoid obstacles. The user has a bit of agency with how quickly the lizard crawls.  
-**Cons**: If the lizard stops moving it does not appear dead, it just looks like its stopped walking. It’s not the strongest link between heart and animation._
+
+_**Cons**: If the lizard stops moving it does not appear dead, it just looks like its stopped walking. It’s not the strongest link between heart and animation.
 
 ### Design concept 2 ###
 A creature that slumps over dead when there is no heartbeat. When you connect to it, it pumps up with blood and stands rigidly either due to pressure or with a different hidden mechanism but appearing to be pressure. The mechanical heart continues to contract to the user’s rhythm after that, filling all the plastic tubing vessels with blood and visibly circulating (like Helen Pynor's "the body is a big place"). It is like a soft bottle filled with red liquid that gets squeezed by a motor. There is minimal other movement, maybe just a wiggle. When the heart stops beating all the liquid goes back to the heart. 
+
 _**Pro**: It's got big spectacle. It connects strongly to ideas of life or absence of life as a direct result of the heart. 
-**Con**: This project relies heavily on the spectacle of blood circulating through the body, and therefore relies heavily on technical finesse. There is little margin of fault here before it looks bad. Aside from that, I think the interactivity of this is very limited, and would lose novelty fast._
+
+_**Con**: This project relies heavily on the spectacle of blood circulating through the body, and therefore relies heavily on technical finesse. There is little margin of fault here before it looks bad. Aside from that, I think the interactivity of this is very limited, and would lose novelty fast._
 
 ### Design concept 3 ###
 A competitive game in which each user controls and races with a small crawling creature with their heart rate. The faster the heart rate, the faster it goes. 
+
 _**Pro**: This concept is the most engaging through competitive play and I think seeing the mildly unhealthy ways people try to increase their heart rate would be very entertaining (hyperventilation, jogging on the spot, inducing anxiety, all sound kind of terrifying but also thrilling).
-**Con**: But in its competitive engagement it also detracts from the link between heart and animation, heart as life giving. Instead it becomes heart as an aid to victory. Users would certainly pay extra attention to their heart, but only to win, not live._
+
+_**Con**: But in its competitive engagement it also detracts from the link between heart and animation, heart as life giving. Instead it becomes heart as an aid to victory. Users would certainly pay extra attention to their heart, but only to win, not live._
 
 ### Design concept 4 ###
 A similar idea to 3, except cooperative rather than competitive. Users need to match their heart rate (matching the beats themselves would be too hard). Each user controls one half of a crawling creature. When they are synchronised, it crawls well. When their heart rates are too different, it crawls erratically. 
+
 _**Pros**: I think this is an equally engaging concept. It also doesn’t encourage unhealthy behaviours. It has a positive awareness of the heart, and as something that is shared between you, another person, and the creature. That fits my message quite strongly. 
-**Cons**: but ultimately, I think it still misses the animation aspect of the heart. I also think it might be too hard to match heart rates. Often users will feel frustrated by the necessary lag._
+
+_**Cons**: but ultimately, I think it still misses the animation aspect of the heart. I also think it might be too hard to match heart rates. Often users will feel frustrated by the necessary lag._
   
 ## Design process discussion ##
 Using the Double Diamond design methodology resulted in the following outcomes:
+
 _these are also illustrated in the diagram below as I realise this is a lot of writing_
 
 **Discover**
 During the discover stage I attempted to not assume the solution. I put my current idea (concept 1) on hold in order to develop a variety of concepts. 
+
 I considered many options for which vital function to measure and how to visually represent them, even the obviously bad options (measuring sleep is an impractical idea for a project like this) as to not overlook any unexpected solutions. There were explorations into concepts aside from vital functions, into interactive creatures that encouraged positive awareness of self in other ways, such as shy robots that need a gentle approach. I considered using live insects as possible input. 
+
 I consulted the opinions of others, presenting them with options and asking them how they’d react to each one, noting which ones got the response I wanted. My message was best communicated through concept 1 and 2. 3 and 4 seemed to be the most engaging. 
 
 
 **Define**
 In the define stage, I considered the most important aspects of my project, selected and refined the concept.  
 
-**Life/death binary aesthetics*
+
+**Life/death binary aesthetics**
 The lizard needed to look and feel alive when you connect it to your body. I determined that the best way to communicate that a creature is being animated is for it to be dead in the first place: a binary was the most important element of the lizard’s behaviour. The robot companion article also recommended making your robot vulnerable and what better way than to give the power to give and take the life of this lizard. 
+
 
 I imagined what can communicate the binary. Visual aids like LEDs and audio aids like speakers came to mind, but they were only sufficient as a supporting role. Concept 2 came into play here with the slumping over. I envisioned a pulley system being implemented, influenced by push puppet mechanisms. I also considered that I could integrate a small circulatory system on the walking lizard but decided that was not feasible with the time and resources I had available. Concept 2 would also be too difficult because it deals predominantly with liquids and pressure.
 
+
 **Gait and movement mechanisms**
 My lizard needed to move in a way that seemed intended if I couldn’t make it walk, but ideally it should walk. The walking lizard will either have to use an ultra-sonic distance sensor or walk in a circle. Latter may be necessary depending on the range of the radio signal. I’m reluctant to allow the user to control the lizard’s direction of movement. It needs to be just enough to be engaging but not excessive because the work is about an involuntary process.
+
 I considered whether it has to move on legs at all. I determined it does because it needs to move rhythmically with the heartrate not continuously, but if legs were too difficult to implement I would be happy to support it on a wheel, or if it still didn’t work I would be willing to add a motorised wheel to propel it but reluctantly. 
 I decided if I couldn’t make it walk, I would rather make it “dance”, possibly incorporating a cooperative element as compensation for engagement.  
 
+
 **Heartrate measurement**
 The heart rate sensor needs to be accurate enough that there is a clear “beat” and “no beat” that can be counted towards BPM. This is true for any of the concepts. 
+
 It needs to move independently from the user and heart rate sensor because it is a separate living being, so I will use radio between two Micro:bits. 
+
+
 _Below is a diagram illustrating my selection process, resolution of anticipated issues and the influence of other concepts on my selected concept._
 ![Image](selection.jpg)
 
