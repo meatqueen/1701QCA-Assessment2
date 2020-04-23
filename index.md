@@ -39,48 +39,57 @@ My project aims to highlight the dependency of a user on a passive life-giving b
 _Rationale: 
 Why heartbeat, animal and animation?
 We aren't often aware of the ongoing physiological processes of our body that keep us alive. When we are aware, I'd argue we don't think about them as "this is keeping me alive right now" and more "this is a passive thing my body does" i.e.: heartbeat. But I'd argue that your body is as much a result of your heartbeat as your heartbeat is a function of your body. Heartrate is my process of choice because it fits nicely into functions we barely notice, don't think much of but is very clearly vital and immediate. 
-Technology and our systems of defying nature are pointed to as counterexamples of humans as moving past nature and often constitute the human identity, but humans will never "graduate" from being animals however advanced we may be. The biology that keeps alive fails to constitute our human identity, but we are united biologically with all other bilateral animals by this basal process.
+Technology and our systems of defying nature are pointed to as counterexamples of humans as moving past nature and often constitute the human identity, but humans will never "graduate" from being animals however advanced we may be. The biology that keeps alive fails to constitute our human identity, but we are united biologically with all other bilateral animals by this basal process._
 
 
-_Other animals are an emotional bridge between our polar images of humans and nature. It is an unusual tension, in which we both dismiss animal behaviours as less sophisticated, less intended than ours, but also anthropomorphise them, projecting our supposedly uniquely human emotions and behaviours onto them. Observing animals allows us to conceive of people as biological and natural, despite superficial differences. Through similarity we empathise and recognise a consciousness even in something we don't like to identify with.
+_Other animals are an emotional bridge between our polar images of humans and nature. It is an unusual tension, in which we both dismiss animal behaviours as less sophisticated, less intended than ours, but also anthropomorphise them, projecting our supposedly uniquely human emotions and behaviours onto them. Observing animals allows us to conceive of people as biological and natural, despite superficial differences. Through similarity we empathise and recognise a consciousness even in something we don't like to identify with._
 
 ## 1.2 Research ##
 _My research and designs engaged in dialogue during the conceptualisation process. It was not a linear process. The influence of the research linearly discussed below pertains to different stages in the development of the final monitor lizard project. Their influence is seen in more detail through experimentation and conceptualisation of specific designs discussed later._
+
 ### Related project 1 ###
 [**Photovore Insect**](https://create.arduino.cc/projecthub/studikasus/walter-the-arduino-photovore-insect-708207?ref=tag&ref_id=robot&offset=17)
 ![Image](photovore.jpg)
 This project illustrates potential mechanisms of walking. Most importantly it illustrated that no complex pulley mechanisms that I was envisioning were necessary to move legs, just servos. 
 It also provides a way for the animal to lift its legs while it moves them forward so it doesn’t push itself back. The central axil that pivots the front legs up and down supports my already conceived ideas for how the lizard would walk with shifting weight. This project illustrated to me how I could move all four limbs (my original design only had two moving limbs and 2 limp limbs) and maintain forward movement. 
 It also suggests an alternative possibly more reliable way to shift weight through rotation of the legs themselves (like hips) rather than the whole body as I plan to. In my lizard this could be integrated into the current design as independently rotating back and front half of the lizard, with one doing the weight shifting and the other mostly propping the animal up. 
+
 ### Related project 2 ###
-[**Helen Pynor’s _The body is a big place_**](http://www.helenpynor.com/heart_perfusion.htm)
 ![Image](helenpynor.jpg)
+[**Helen Pynor’s _The body is a big place_**](http://www.helenpynor.com/heart_perfusion.htm)
 Helen Pynor often works with grotesque imagery with a biological focus. This work relates to my rationale, taking the heart out of the body and illustrating its function. It’s important that this isn’t a representation of a heart but a literal pig’s heart that is made to function outside of a body through blood flow. I don’t believe any link is drawn between passive bodily functions and life, but maybe in some ways the opposite, the function of a heart even in absence of life which is quite grotesque. 
 Still it pertains to the primacy of heartrate as something passive, lacking agency and still functioning. There is a clear lack of involvement from any conscious thought for this system to work. I aim to challenge our agency of our bodies in this regard too.
 For concept 2 (which I discuss later) I draw on the imagery of a heart circulating blood and pumping a creature back to life. Concept 2 later influences concept 1 in the animation aspect. 
+
 ### Related project 3 ###
 [**Monster Chan - The credit card walking robot**](https://www.robotshop.com/community/robots/show/monster-chan-the-credit-card-walking-robot)
 ![Image](monsterchan.PNG)
 This project also suggests another option for making my lizard walk. Walking was a particularly uncertain aspect for this project and more options give me a good safety net. Here instead of shifting weight, the middle legs act like a prop up for the side that needs to be off the ground. This is similar to how I have a nail propping up the lizard in the centre of the body, but this nail doesn’t move up and down. Instead it is used as a pivot point. 
 If I continue to have trouble with making the lizard walk, I could easily implement a see saw style servo in the middle that props up the side that needs to be airborne at that point in the walking cycle. 
+
 ### Related project 4 & 5 & 6 ###
 I have grouped these together because they are similar and serve a similar role in illustrating alternative ways of visualising heart rates and supporting that my lizard is at least somewhat original. Although no elements of these projects were burrowed, having alternatives is important.
+
 [**Pulse**](http://www.jennykang.me/pulse)
 ![Image](pulse.png)
 This app uses your heart rate to generate natural fractal images of trees to emotionally connect the user with their heart rate. The project explores the psychology surrounding this imagery which is something I should’ve investigated. With a similar intent of drawing connection between humans and nature, this heart rate visualising app provided an alternative way to visualise heart rate early in the conceptualisation process. It was also more relevant to me when the project still had meditative function in which case, I would have strayed away from a lizard walking to something more abstract and emotionally resonant.  
 It was also confirmation that there was a tendency to depict heart rate abstractly and not draw a link between heart and animation as strongly as I intend to, justifying my project. 
+
 [**Heart Bot**](https://www.element14.com/community/groups/sensor-technology/blog/2015/01/05/heart-bot-is-a-heartbeat-interactive-art-installation)
 ![Image](heartbot.png)
 A drawing robot draws a user’s heart rate as a waveform radiating from the centre next to all the other previous users heart rates. This project has a focus on heartrate as an identifier, something that is unique to you. It also looks at heartrate temporally, keeping public record of many people’s heart rates at those moments in time- heart as a timekeeper. This plays into the rhythmic and clocklike paradigms of heart. It uses something we see in a medical context (ECG) as a collaborative medium. 
 The concept of this installation is someone relevant to me, in highlighting the passive nature of the heart, but instead looks at the identifying rather than life giving quality of your heart. Although one could argue the medical connotations of the ECG do carry life and death meanings. 
+
 [**Heart Bloom**](http://heartbloom.rogierarents.nl/ddw.html)
 ![Image](heartbloom.PNG)
 Very similar to Heart Bot, except here the waveforms are drawn by a drawing bot into the shape of a flower (plant imagery like Pulse). It is also collaborative, with the audience pinning up their unique heart flowers onto a wall. There is emphasis on heart rate as an individual identifying thing and as an emotional gauge. Identifiable flower shapes are indicative of certain states like anger or relaxation. 
 I believe I offer quite a different outlook on heart rate to this and the previous two projects. I do not believe heart rate being unique has much to offer aside from novelty in repetition. 
+
 ### Related project 7 ###
 [**Push puppets**](https://www.youtube.com/watch?v=F0php4pwrZc)
 ![Image](pushpuppet.JPG)
 This is less of a concept and more of an existing design mechanism in the toy market that I’m drawing on. It was important in figuring out how I would slump over my lizard (“dead mode”) in concept 2 and later in the final project. Keeping strings that run through hard pieces taught is the mechanism that I settled on that I achieved with a pulley. Without my previous interaction with these toys I wouldn’t have this option available to me, even if it turns out that I can’t use it. 
+
 ### Related project 8 ###
 [**Scientists bring a fossil back to life**](https://www.nature.com/articles/d41586-019-00186-x)
 ![Image](fossil.jpg)
