@@ -65,6 +65,7 @@ For concept 2 (which I discuss later) I draw on the imagery of a heart circulati
 ### Related project 3 ###
 [**Monster Chan - The credit card walking robot**](https://www.robotshop.com/community/robots/show/monster-chan-the-credit-card-walking-robot)
 ![Image](monsterchan.PNG)
+
 This project also suggests another option for making my lizard walk. Walking was a particularly uncertain aspect for this project and more options give me a good safety net. Here instead of shifting weight, the middle legs act like a prop up for the side that needs to be off the ground. This is similar to how I have a nail propping up the lizard in the centre of the body, but this nail doesn’t move up and down. Instead it is used as a pivot point. 
 If I continue to have trouble with making the lizard walk, I could easily implement a see saw style servo in the middle that props up the side that needs to be airborne at that point in the walking cycle. 
 
@@ -73,6 +74,7 @@ I have grouped these together because they are similar and serve a similar role 
 
 [**Pulse**](http://www.jennykang.me/pulse)
 ![Image](pulse.png)
+
 This app uses your heart rate to generate natural fractal images of trees to emotionally connect the user with their heart rate. The project explores the psychology surrounding this imagery which is something I should’ve investigated. With a similar intent of drawing connection between humans and nature, this heart rate visualising app provided an alternative way to visualise heart rate early in the conceptualisation process. It was also more relevant to me when the project still had meditative function in which case, I would have strayed away from a lizard walking to something more abstract and emotionally resonant.  
 It was also confirmation that there was a tendency to depict heart rate abstractly and not draw a link between heart and animation as strongly as I intend to, justifying my project. 
 
@@ -91,13 +93,16 @@ Very similar to Heart Bot, except here the waveforms are drawn by a drawing bot 
 I believe I offer quite a different outlook on heart rate to this and the previous two projects. I do not believe heart rate being unique has much to offer aside from novelty in repetition. 
 
 ### Related project 7 ###
-[**Push puppets**](https://www.youtube.com/watch?v=F0php4pwrZc)
+[**Push puppets**](https://www.youtube.com/watch?v=F0php4pwrZc | width=100)
 ![Image](pushpuppet.JPG)
+
 This is less of a concept and more of an existing design mechanism in the toy market that I’m drawing on. It was important in figuring out how I would slump over my lizard (“dead mode”) in concept 2 and later in the final project. Keeping strings that run through hard pieces taught is the mechanism that I settled on that I achieved with a pulley. Without my previous interaction with these toys I wouldn’t have this option available to me, even if it turns out that I can’t use it. 
 
 ### Related project 8 ###
 [**Scientists bring a fossil back to life**](https://www.nature.com/articles/d41586-019-00186-x)
+
 ![Image](fossil.jpg)
+
 This is the video that lead my project from the beginning of the year. This is the image that I had in my head when thinking about concept 1 and largely has stayed this way in terms of presentation. I think it demonstrates that something can be “brought back to life”, even replicas of bones, by making it walk, and I was quite attached to this idea. Animation through movement feels very intuitive now. 
 I drew a lot on how this reptile moves like where the legs are during contact, with what rhythm they move (do they move together or one at a time) and what role necks and tails play in balance. There is a rhythm here that is very easy to visualise. It is common to many reptiles because of the position of their hips (splayed walking). I went with “lizard” as my animal of choice because of the clarity this video offered to me. 
 ### Other research ###
@@ -144,28 +149,35 @@ _**Pros**: I think this is an equally engaging concept. It also doesn’t encour
 ## Design process discussion ##
 Using the Double Diamond design methodology resulted in the following outcomes:
 _these are also illustrated in the diagram below as I realise this is a lot of writing_
+
 **Discover**
 During the discover stage I attempted to not assume the solution. I put my current idea (concept 1) on hold in order to develop a variety of concepts. 
 I considered many options for which vital function to measure and how to visually represent them, even the obviously bad options (measuring sleep is an impractical idea for a project like this) as to not overlook any unexpected solutions. There were explorations into concepts aside from vital functions, into interactive creatures that encouraged positive awareness of self in other ways, such as shy robots that need a gentle approach. I considered using live insects as possible input. 
 I consulted the opinions of others, presenting them with options and asking them how they’d react to each one, noting which ones got the response I wanted. My message was best communicated through concept 1 and 2. 3 and 4 seemed to be the most engaging. 
+
+
 **Define**
 In the define stage, I considered the most important aspects of my project, selected and refined the concept.  
+
 **Life/death binary aesthetics*
 The lizard needed to look and feel alive when you connect it to your body. I determined that the best way to communicate that a creature is being animated is for it to be dead in the first place: a binary was the most important element of the lizard’s behaviour. The robot companion article also recommended making your robot vulnerable and what better way than to give the power to give and take the life of this lizard. 
+
 I imagined what can communicate the binary. Visual aids like LEDs and audio aids like speakers came to mind, but they were only sufficient as a supporting role. Concept 2 came into play here with the slumping over. I envisioned a pulley system being implemented, influenced by push puppet mechanisms. I also considered that I could integrate a small circulatory system on the walking lizard but decided that was not feasible with the time and resources I had available. Concept 2 would also be too difficult because it deals predominantly with liquids and pressure.
+
 **Gait and movement mechanisms**
 My lizard needed to move in a way that seemed intended if I couldn’t make it walk, but ideally it should walk. The walking lizard will either have to use an ultra-sonic distance sensor or walk in a circle. Latter may be necessary depending on the range of the radio signal. I’m reluctant to allow the user to control the lizard’s direction of movement. It needs to be just enough to be engaging but not excessive because the work is about an involuntary process.
 I considered whether it has to move on legs at all. I determined it does because it needs to move rhythmically with the heartrate not continuously, but if legs were too difficult to implement I would be happy to support it on a wheel, or if it still didn’t work I would be willing to add a motorised wheel to propel it but reluctantly. 
 I decided if I couldn’t make it walk, I would rather make it “dance”, possibly incorporating a cooperative element as compensation for engagement.  
+
 **Heartrate measurement**
 The heart rate sensor needs to be accurate enough that there is a clear “beat” and “no beat” that can be counted towards BPM. This is true for any of the concepts. 
 It needs to move independently from the user and heart rate sensor because it is a separate living being, so I will use radio between two Micro:bits. 
 _Below is a diagram illustrating my selection process, resolution of anticipated issues and the influence of other concepts on my selected concept._
 ![Image](selection.jpg)
+
 ## 1.4 Final design concept ##
 The refined concept 1 now incorporated elements from concept 2 and potentially from concept 4.
 A lizard is animated by a user’s heart. When a heartrate is first detected, its limp body becomes rigid. After that it goes through a walking cycle at the same rate as the user’s heart, with a bright LED pulsating in time under its skin as well. When the user removes their finger from the sensor, the lizard is limp again. 
-
 
 ### Interaction flowchart ###
 ![Image](interaction.jpg)
