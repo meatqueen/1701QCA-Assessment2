@@ -58,6 +58,7 @@ It also suggests an alternative possibly more reliable way to shift weight throu
 ![Image](helenpynor.jpg)
 
 [**Helen Pynor’s _The body is a big place_**](http://www.helenpynor.com/heart_perfusion.htm)
+
 Helen Pynor often works with grotesque imagery with a biological focus. This work relates to my rationale, taking the heart out of the body and illustrating its function. It’s important that this isn’t a representation of a heart but a literal pig’s heart that is made to function outside of a body through blood flow. I don’t believe any link is drawn between passive bodily functions and life, but maybe in some ways the opposite, the function of a heart even in absence of life which is quite grotesque. 
 Still it pertains to the primacy of heartrate as something passive, lacking agency and still functioning. There is a clear lack of involvement from any conscious thought for this system to work. I aim to challenge our agency of our bodies in this regard too.
 For concept 2 (which I discuss later) I draw on the imagery of a heart circulating blood and pumping a creature back to life. Concept 2 later influences concept 1 in the animation aspect. 
@@ -93,7 +94,7 @@ Very similar to Heart Bot, except here the waveforms are drawn by a drawing bot 
 I believe I offer quite a different outlook on heart rate to this and the previous two projects. I do not believe heart rate being unique has much to offer aside from novelty in repetition. 
 
 ### Related project 7 ###
-[**Push puppets**](https://www.youtube.com/watch?v=F0php4pwrZc | width=100)
+[**Push puppets**](https://www.youtube.com/watch?v=F0php4pwrZc =250x250)
 ![Image](pushpuppet.JPG)
 
 This is less of a concept and more of an existing design mechanism in the toy market that I’m drawing on. It was important in figuring out how I would slump over my lizard (“dead mode”) in concept 2 and later in the final project. Keeping strings that run through hard pieces taught is the mechanism that I settled on that I achieved with a pulley. Without my previous interaction with these toys I wouldn’t have this option available to me, even if it turns out that I can’t use it. 
@@ -107,6 +108,7 @@ This is the video that lead my project from the beginning of the year. This is t
 I drew a lot on how this reptile moves like where the legs are during contact, with what rhythm they move (do they move together or one at a time) and what role necks and tails play in balance. There is a rhythm here that is very easy to visualise. It is common to many reptiles because of the position of their hips (splayed walking). I went with “lizard” as my animal of choice because of the clarity this video offered to me. 
 ### Other research ###
 **Walking cycles**
+
 Although I had a clear image of the walking cycle from the robot fossil, life reference is still relevant. 
 [This monitor lizard video](https://www.youtube.com/watch?v=t9z80QzM1xE) shows how exaggerated those positions of the head, neck and legs are. Just like the robot fossil, it moves by picking up diagonally opposite legs (back right, front left) and at the same time pushing off with the other two making that are making contact. 
 
@@ -115,8 +117,11 @@ This is in contrast to the walking cycle of mammals, who’s legs are angled und
 This is important as a backup walk cycle in case it is necessary for only one side to be airborne at a time and still look natural. 
 
 **Making a robot feel alive and empathising with it**
+
 As discussed in my rationale, empathising with the robot is important to conceive of yourself as natural. For that reason the robot should also feel natural despite being a robot. [This article](https://thenextweb.com/podium/2019/08/16/heres-how-we-should-design-companion-robots/) gives tips on how to make companion robots, so robots that are easy to view as living and empathise with. My takeaways for my lizard were that it needed to show vulnerability. For me that meant definitely making it dead when you weren’t connected with it, taking priority over making it walk exactly how I wanted it to. This led to the implementation of elements of concept 2 (slumping over) into concept 1. The article also suggests that the robot servo no practical function if it is a companion robot, supporting my decision to not make it a meditative aid. 
+
 **Conversations with people around me**
+
 When I asked them what else I could measure aside from heart rate they had some suggestions. Heartrate is by far the most practical and emblematic option, but I couldn’t choose it without considering other options. 
 
 The suggestions were: 
