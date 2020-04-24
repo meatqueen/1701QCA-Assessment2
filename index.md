@@ -400,7 +400,7 @@ Some basic loops that look like a heart:
 There were a lot of issues with the heart rate monitor. The one I originally used was MAX30100. 
 
 It was made for Arduino and not for Micro:bit as it’s pins connect to the clock and data pins of the Arduino. Furthermore, the [library](https://github.com/mfitzp/max30100) I learned some Micropython for seems to be written in Python and needs to be adapted to Micropython to actually work, which is way beyond my capacity. This is according to this [forum](https://forum.micropython.org/viewtopic.php?t=8101&p=46069). I assume this is why it was giving me memory errors.
-
+Support for this module has also been discontinuied for newer alternatives which may be why there isn't much community support available for it too. 
 
 I did learn all the Micropython commands I knew in MakeCode, how to import a library and how to use the serial screen. 
 
