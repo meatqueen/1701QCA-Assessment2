@@ -407,7 +407,10 @@ I did learn all the Micropython commands I knew in MakeCode, how to import a lib
 ### Pulsesensor.com knock off ### 
 
 That nightmare ended when my backup analog heart module arrived in the mail. It seemed quite similar to the PulseSensor.com sensor so I just followed the Micro:bit instructions on their website: Vin to 3v, G to ground, Input to any pin and just read analog pin for signal. 
-It worked well, with clear “beat” and “no beat”. Although I found that the pressure applied was very important. Too much and the signal was maximum (1032), too little and it stayed pretty low (<300) and didn’t fluctuate much in both instances. Also very strangely sometimes the sensor detected a pulse on my desk which I can only guess has something to do with my lamp. 
+It worked well, with clear “beat” (>700) and “no beat” (<100). Although I found that the pressure applied was very important. Too much and the signal was maximum (1032), too little and it stayed pretty low (<300) and didn’t fluctuate much in both instances. Also very strangely sometimes the sensor detected a pulse on my desk which I can only guess has something to do with my lamp. 
+
+In this gif the pulse signal is represented by a bar graph. 
+
 ![Image](heartrate.gif)
 
 Next I needed to figure out how to detect a beat and make sure this sensor was accurate, but **IT BROKE! The connections were soldered on and didn’t take much twisting. I ordered the actual pulsesensor.com one.** 
@@ -417,7 +420,7 @@ I thought about two methods for when the next one comes. Until then I will use t
 
 **method 1**
 
-If PS is 0, and within X time it is >500, count that as a beat, otherwise the time expires and repeat. Make  a counter for the beats and after 15 seconds display beats per minute. 
+If Pulse Signal (PS) is 0, and within X time it is >500, count that as a beat, otherwise the time expires and repeat. Make  a counter for the beats and after 15 seconds display beats per minute. 
 
 
 **method 2**
