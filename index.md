@@ -214,51 +214,51 @@ A lizard is animated by a user’s heart. When a heartrate is first detected, it
 ## 2.1 Materials ##
 **I bought various materials for my project (crossed out items were not used in final):**
 
-•	~~WAGO lever wireless connectors~~
+	•	~~WAGO lever wireless connectors~~
 
-•	Electrical tape
+	•	Electrical tape
 
-•	a second microbit
+	•	a second microbit
 
-•	a 10mm red LED
+	•	a 10mm red LED
 
-•	4 small servo motors (SG-90)
+	•	4 small servo motors (SG-90)
 
-•	1 large servo motor (6V)
+	•	1 large servo motor (6V)
+	
+	•	A microbit shield with extra pin holes 
 
-•	A microbit shield with extra pin holes 
+	•	~~A MAX30100 pulse sensor~~
 
-•	~~A MAX30100 pulse sensor~~
+	•	~~Another pulse sensor~~
 
-•	~~Another pulse sensor~~
+	•	Another-nother pulse sensor
+	
+	•	A pulley wheel
 
-•	Another-nother pulse sensor
+	•	Crimping tool, electrical tape
 
-•	A pulley wheel
+	•	~~27 Ohm resistor~~
 
-•	Crimping tool, electrical tape
+	•	1 6v and 3 3v slot battery packs
 
-•	~~27 Ohm resistor~~
+	•	~~Ultrasonic distance sensor~~
 
-•	1 6v and 3 3v slot battery packs
-
-•	~~Ultrasonic distance sensor~~
-
-•	Plastic glue
+	•	Plastic glue
 
 
 
 **Some things I already owned:**
 
-•	The first microbit
+	•	The first microbit
 
-•	Assorted screws, nuts and bolts from around the house
+	•	Assorted screws, nuts and bolts from around the house
 
-•	Thermoplastic beads
+	•	Thermoplastic beads
+	
+	•	Binding wire
 
-•	Binding wire
-
-•	Nylon string
+	•	Nylon string
 
 ## 2.2 Connections ##
 The WAGO connectors do not work for 1m wire. All my connections will have to be solderless for the meantime and use twist and tape method from the replication project. 
@@ -507,11 +507,11 @@ _Radio _
 
 When BPM is received convert to wait time (time in between motions). 
 
-If bpm is 70 beats per minute, how much time is that in between each beat?
+	If bpm is 70 beats per minute, how much time is that in between each beat?
 
-Bpm/60 = 0.8 seconds. 
+	Bpm/60 = 0.8 seconds. 
 
-0.8 x 1000 = 800 ms
+	0.8 x 1000 = 800 ms
 
 ![Image](radiocode2.png]
 
