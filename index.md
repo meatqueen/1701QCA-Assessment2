@@ -377,21 +377,22 @@ The 1cm LED that I bought is very bright as promised. It will diffuse quite well
 
 The maths I did was influenced by this [site]( https://www.evilmadscientist.com/2012/resistors-for-leds/). 
 
-_There is a 2.4V drop according to the manufacturer._
+There is a 2.4V drop according to the manufacturer._
 
-_I’m bringing that down from 3V_
+I’m bringing that down from 3V
 
-_3 – 2.4 = 0.6V_
+	3 – 2.4 = 0.6V
 
-_V = I*R _
+	V = I*R 
 
-_0.6 / 0.025 (suggested value) = R _
+	0.6 / 0.025 (suggested value) = R
 
-_R = 24 ohms_
+	R = 24 ohms
 
-_Oh well! It definitely works with 47ohm._
+Oh well! It definitely works with 47ohm.
 
 Some basic loops that look like a heart:
+
 ![Image](LEDcode1.png)
 ## 2.7 Heart Module ##
 ### MAX30100 ###
