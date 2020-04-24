@@ -334,8 +334,8 @@ I thought I could skimp out on work just by connecting the plates with thread, b
 
 I used super glue to join the neck pieces to the canvas.
 
-![Image](crocneck.jpg)
-![Image](crocneck3.gif)
+![Image](crockneck.jpg)
+![Image](crockneck3.gif)
 
 
 Although I had to add a supporting wire to the neck. The neck tended to curve back so much that when the servo turned to the other side it didn’t follow. It also bowed too much. 
@@ -373,11 +373,11 @@ Lastly I went for in-between: a pyramid lock and key (lock indented with edge of
 ![Image](triangle.gif)
 ![Image](puleycode1.png)
 ## 2.6 LED ##
-The 1cm LED that I bought is very bright as promised. It will diffuse quite well through the lizard’s skin. But I did my maths wrong after all. The guy at the store who helped me find the 27 ohm resistor that I thought I needed according to my maths said that one should only need a 47 ohm resistor according to his book. 
+The 1cm LED that I bought is very bright as promised. It will diffuse quite well through the lizard’s skin. But I did my maths wrong after all. The guy at the store who helped me find the 27 ohm resistor said that LED should need a 47 ohm resistor according to his book. 
 
 The maths I did was influenced by this [site]( https://www.evilmadscientist.com/2012/resistors-for-leds/). 
 
-There is a 2.4V drop according to the manufacturer._
+There is a 2.4V drop according to the manufacturer.
 
 I’m bringing that down from 3V
 
@@ -461,7 +461,7 @@ So accurate enough, at least the system. Might take adjustments with sensor when
 
 I can also decrease the sample from 10 seconds to 5 if it feels too laggy on the user (probably will).
 
-Method 2
+**Method 2**
 
 I am dismissing this method because method 1 is effective enough. It also didn’t account for the return of the beat from 1032 back to 0 (shouldn’t be counted as a beat). This is dealt with in method 1 simply by halving it. The 10 second period is an average already. But the returning “beats” cannot be counted in method 2 because this produces in inconsistency in time (illustrated below) This could most likely be worked around but at this point it is needlessly more complicated. 
 
@@ -522,24 +522,24 @@ Taking code from LED script, the 30, 50, 100 and 1000 ms increment gradient shou
 
 Some maths converting the four current millisecond increments to fractions: 
 
-8 X 30 = 240 
+	8 X 30 = 240 
 
-2 x 50 = 100
+	2 x 50 = 100
 
-1 x 1000 = 1000
+	1 x 1000 = 1000
 
-1 x 100 = 100
+	1 x 100 = 100
 
-	= 1540 ms total duration of cycle
+		= 1540 ms total duration of cycle
 	
 	
-30ms/1540 = 0.019 
+	30ms/1540 = 0.019 
 
-50ms/1540 = 0.032  
+	50ms/1540 = 0.032  
 
-100ms/1540 = 0.065
+	100ms/1540 = 0.065
 
-1000ms/1540 = 0.649
+	1000ms/1540 = 0.649
 
 ![Image](LEDcode2.PNG) 
 
