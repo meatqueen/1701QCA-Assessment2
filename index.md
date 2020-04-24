@@ -222,7 +222,7 @@ A lizard is animated by a user’s heart. When a heartrate is first detected, it
 
 •	a 10mm red LED
 
-•	4 small servo motors (SG-90)
+•	5 small servo motors (SG-90)
 
 •	1 large servo motor (6V)
 	
@@ -577,7 +577,7 @@ _If this doesn’t work I will consider propping the lizard up on a wheel to red
 
 2.	I need to put the neck component with the walking component and ensure the balancing works like it does in my head. 
 
-_If it doesn’t work I might have to make sure that only one sided at a time is moving its legs forward instead of diagonally opposite legs._
+_If it doesn’t work I might have to make it so one side at a time is moving its legs forward instead of diagonally opposite legs._
 
 _Otherwise the back legs, which I think might conflict with the front legs, can be looser than the front so that they don’t actually push much. I would have to put the propping up nail in the back centre then._
 
@@ -585,4 +585,4 @@ _Otherwise the back legs, which I think might conflict with the front legs, can 
 
 4.	I need to design how I present the heartrate monitor and its Micro:bit to the user.
 
-5.	Wires and gears should be covered up, possible with faux fur or other flexible fabric 
+5.	Wires and gears should be covered up, possibly with faux fur or other flexible fabric 
