@@ -445,6 +445,7 @@ Adding a clock that shows T for 10 seconds and displays BPM (number of beats X 6
 
 
 **Step 3: Timer linked to beats**
+
 While timer box is unchecked measure for beats. When it is checked show BPM. 
 
 ![Image](heartcode3.png)
@@ -488,6 +489,7 @@ How it’ll be arranged on the body of the lizard
 
 ### The code ###
 **Sender:**
+
 _Heart code_
 
 Identical to final heart code in section 2.7 
@@ -495,7 +497,7 @@ Identical to final heart code in section 2.7
 ![Image](heartcode3.png)
 
 
-_Radio _
+_Radio_
 
 Send value when timer is up
 
@@ -503,7 +505,8 @@ Send value when timer is up
 
 
 **Receiver:**
-_Radio _
+
+_Radio_
 
 When BPM is received convert to wait time (time in between motions). 
 
@@ -574,10 +577,12 @@ _If this doesn’t work I will consider propping the lizard up on a wheel to red
 
 2.	I need to put the neck component with the walking component and ensure the balancing works like it does in my head. 
 
-_If it doesn’t work I might have to make sure that only one sided at a time is moving its legs forward instead of diagonally opposite legs. 
+_If it doesn’t work I might have to make sure that only one sided at a time is moving its legs forward instead of diagonally opposite legs._
 
-Otherwise the back legs, which I think might conflict with the front legs, can be looser than the front so that they don’t actually push much. I would have to put the propping up nail in the back centre then._
+_Otherwise the back legs, which I think might conflict with the front legs, can be looser than the front so that they don’t actually push much. I would have to put the propping up nail in the back centre then._
 
 3.	When walking is implemented I will also have to implement obstacle avoidance or make it turn automatically.
+
 4.	I need to design how I present the heartrate monitor and its Micro:bit to the user.
+
 5.	Wires and gears should be covered up, possible with faux fur or other flexible fabric 
