@@ -322,29 +322,35 @@ The neck saw some design iterations from the original. I realised the original b
 
 I changed the design modelling it after my friend’s crocodile rattle toy like this one:
 ![Image](croc.jpg)
+
 ![Image](neck2.jpg)
 
 
 I thought I could skimp out on work just by connecting the plates with thread, but there was too much rotational movement and I realised I would have to adhere to the original crocodile with a strip of canvas running through the middle as it only has one axis of movement.
+
 ![Image](neckfail.jpg)
 ![Image](neckfail.gif)
 
 
 I used super glue to join the neck pieces to the canvas.
+
 ![Image](crocneck.jpg)
 ![Image](crocneck3.gif)
 
 
 Although I had to add a supporting wire to the neck. The neck tended to curve back so much that when the servo turned to the other side it didn’t follow. It also bowed too much. 
+
 ![Image](neckbad.gif)
 
 
 The supporting wire was quite a nice result. It has a good bobble to it.
+
 ![Image](bobble.jpg)
 ![Image](bobble.gif)
 
 
 In my plans, the degrees for left and right were a bit extreme (45 and 135). After settled for an average between those and neutral (90) and it worked well. 
+
 ![Image](neckcode.png)
 ## 2.5 Pulley tension ##
 The pulley works by threading nylon string through the joints and loosening or tightening it up with a stronger motor (6V) with a disc. When it’s tight, the joints come together rigid in a lock and key fashion. The string is guided through the body with eye screws. In my original sketches this lock and key was round.
@@ -358,6 +364,7 @@ The sphere was too slippery though and even while rigid the limb rotated.
 
 
 Next I tried a cube lock and key, but it turned out too tight and would slot correctly without effort from me. It is a good lego-style slot in though, quite strong and may be useful in future projects. 
+
 ![Image](square.gif)
 
 
@@ -388,8 +395,10 @@ Some basic loops that look like a heart:
 ![Image](LEDcode1.png)
 ## 2.7 Heart Module ##
 ### MAX30100 ###
-There were a lot of issues with the heart rate monitor. The original one that I used was MAX30100. 
+There were a lot of issues with the heart rate monitor. The one I originally used was MAX30100. 
+
 It was made for Arduino and not for Micro:bit as it’s pins connect to the clock and data pins of the Arduino. Furthermore, the [library](https://github.com/mfitzp/max30100) I learned some Micropython for seems to be written in Python and needs to be adapted to Micropython to actually work, which is way beyond my capacity. This is according to this [forum](https://forum.micropython.org/viewtopic.php?t=8101&p=46069). I assume this is why it was giving me memory errors.
+
 
 I did learn all the Micropython commands I knew in MakeCode, how to import a library and how to use the serial screen. 
 
@@ -398,14 +407,19 @@ I did learn all the Micropython commands I knew in MakeCode, how to import a lib
 That nightmare ended when my backup analog heart module arrived in the mail. It seemed quite similar to the PulseSensor.com sensor so I just followed the Micro:bit instructions on their website: Vin to 3v, G to ground, Input to any pin and just read analog pin for signal. 
 It worked well, with clear “beat” and “no beat”. Although I found that the pressure applied was very important. Too much and the signal was maximum (1032), too little and it stayed pretty low (<300) and didn’t fluctuate much in both instances. Also very strangely sometimes the sensor detected a pulse on my desk which I can only guess has something to do with my lamp. 
 ![Image](heartrate.gif)
+
 Next I needed to figure out how to detect a beat and make sure this sensor was accurate, but **IT BROKE! The connections were soldered on and didn’t take much twisting. I ordered the actual pulsesensor.com one.** 
+
 
 I thought about two methods for when the next one comes. Until then I will use the simulator, dragging the pin up and down in time with a metronome:
 
 **method 1**
+
 If PS is 0, and within X time it is >500, count that as a beat, otherwise the time expires and repeat. Make  a counter for the beats and after 15 seconds display beats per minute. 
 
+
 **method 2**
+
 Alternatively, if PS = 0 and PS > 500 in time X, mark upper or lower with timestamp, repeat for next beat and subtract the timestamps. Average out after 30 times gives average time in between beats (this is similar to my timing gate replication project). 
 
 ### Method 1 ###
@@ -413,8 +427,12 @@ Alternatively, if PS = 0 and PS > 500 in time X, mark upper or lower with timest
 **Step 1: detecting a beat** 
 
 ![Image](heartcode1.png)
+
+
 When signal is above 370, box 1 is checked
+
 When signal is below 100, box 2 is checked
+
 Both boxes checked, count as beat, increase ‘beat’ by 0.5 because the beat is counted twice, on the rise and fall. 
 Uncheck boxes.  
 
@@ -424,17 +442,22 @@ Adding a clock that shows T for 10 seconds and displays BPM (number of beats X 6
 
 ![Image](heartcode2.png)
 
+
 **Step 3: Timer linked to beats**
 While timer box is unchecked measure for beats. When it is checked show BPM. 
 
 ![Image](heartcode3.png)
 
+
 **Step 4: Testing if this method gives accurate BPM**
 
 I have to test accuracy with manual inputs guided by a metronome, so there’s a degree of human error. A few trails gave these values:
+
 ![Image](hearttrial.PNG)
 
+
 So accurate enough, at least the system. Might take adjustments with sensor when it arrives.  
+
 I can also decrease the sample from 10 seconds to 5 if it feels too laggy on the user (probably will).
 
 Method 2
@@ -443,75 +466,105 @@ I am dismissing this method because method 1 is effective enough. It also didn�
 
 ![Image](hearttrial2.PNG)
 
-Method 1. Vertical lines are beats. Red is what the analog reading has to traverse to count as a heartbeat. 
-
-Method 2. Horizontal lines measuring time would be different between the red crosses and the second set of green crosses which is what would occur if they were measured. Only the green crosses should be measured, but why bother. 
-
-
 
 ## 2.8 Putting the code together ##
-Through this log I’ve developed all the components that now need to be brought together. Below is the illustration of how. 
-What the wiring will look like in the final fabrication:
+Through this log I’ve developed all the components that now need to be brought together. Below is the illustration of how:
+
 Sender Micro:bit
+
 ![Image](diagram3.jpg)
+
+
 Receiver Micro:bit
+
 ![Image](diagram1.jpg)
+
+
 How it’ll be arranged on the body of the lizard
+
 ![Image](diagram2.jpg)
+
+
 ###The code###
 **Sender:**
 _Heart code_
+
 Identical to final heart code in section 2.7 
+
 ![Image](heartcode3.png]
 
+
 _Radio _
+
 Send value when timer is up
+
 ![Image](radiocode1.png]
+
 
 **Receiver:**
 _Radio _
+
 When BPM is received convert to wait time (time in between motions). 
+
 If bpm is 70 beats per minute, how much time is that in between each beat?
+
 Bpm/60 = 0.8 seconds. 
+
 0.8 x 1000 = 800 ms
+
 ![Image](radiocode2.png]
 
+
 _LED:_
+
 Taking code from LED script, the 30, 50, 100 and 1000 ms increment gradient should happen in the space of one ‘wait’. So each gradient should be a fraction of ‘wait’ proportional to the times I gave it in the LED code from before. I also need to make sure the LED is only one when the lizard is in “live” mode (wait is about 10ms). 
+
 Some maths converting the four current millisecond increments to fractions: 
+
 8 X 30 = 240 
+
 2 x 50 = 100
+
 1 x 1000 = 1000
+
 1 x 100 = 100
+
 	= 1540 ms total duration of cycle
+	
+	
 30ms/1540 = 0.019 
+
 50ms/1540 = 0.032  
+
 100ms/1540 = 0.065
+
 1000ms/1540 = 0.649
+
 ![Image](LEDcode2.PNG) 
 
 
-
-
-
-
 _Servos_
+
 On start: dead mode. When rhythm detected, tense up and straighten neck. After that, loop walking cycle separated by “wait” time. 
 If wait stops being above 10ms, go back to dead mode. 
 
 ![Image](servocode.PNG)
 
+
 _Final touches_
 
 On sender Micro:bit:
 To ensure that only a finger will set off the timer, skin should close a circuit and press a pin (pin 0). 
+
 If it’s not pressed, then timer is set to 2 so it doesn’t affect anything and radio signal is 0. 
+
 
 If it is closed, draw heartrate bar graph on LED screen (feedback for user)
 
 Indicate readiness but absence of input if pin 0 is not closed with LED dot. 
 
 ![Image](finalcode.PNG) 
+
 
 # 3. Steps towards final #
 1.	I am worried that the pulley motor is much stronger than the walking motors and will overpower them. I need to connect a leg to both a pulley motor and a walking motor to ensure this is not the case. The pulley should pull directly above the walking motor to prevent left or right pull. 
