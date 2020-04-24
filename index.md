@@ -34,6 +34,7 @@
 # 1. Conceptualisation #
 ## 1.1 Design intent ##
 In short: Creating a clear visual and tactile link between “heart” and “life”, and the inverse, “no heart” and “no life”. 
+
 My project aims to highlight the dependency of a user on a passive life-giving bodily process (heartbeat) that they have minimal agency over through a robotic animal. It will challenge notions of humans as “unnatural” or above nature. 
 
 _Rationale: 
@@ -59,7 +60,7 @@ It also suggests an alternative possibly more reliable way to shift weight throu
 
 [**Helen Pynor’s _The body is a big place_**](http://www.helenpynor.com/heart_perfusion.htm)
 
-Helen Pynor often works with grotesque imagery with a biological focus. This work relates to my rationale, taking the heart out of the body and illustrating its function. It’s important that this isn’t a representation of a heart but a literal pig’s heart that is made to function outside of a body through blood flow. I don’t believe any link is drawn between passive bodily functions and life, but maybe in some ways the opposite, the function of a heart even in absence of life which is quite grotesque. 
+Helen Pynor often works with grotesque imagery with a biological focus. This work relates to my rationale, taking the heart out of the body and illustrating its function. It’s important that this isn’t a representation of a heart but a literal pig’s heart that is made to function outside of a body with blood flow. I don’t believe any link is drawn between passive bodily functions and life, but maybe in some ways the opposite, the function of a heart even in absence of life which is quite grotesque. 
 Still it pertains to the primacy of heartrate as something passive, lacking agency and still functioning. There is a clear lack of involvement from any conscious thought for this system to work. I aim to challenge our agency of our bodies in this regard too.
 For concept 2 (which I discuss later) I draw on the imagery of a heart circulating blood and pumping a creature back to life. Concept 2 later influences concept 1 in the animation aspect. 
 
@@ -68,7 +69,7 @@ For concept 2 (which I discuss later) I draw on the imagery of a heart circulati
 ![Image](monsterchan.PNG)
 
 This project also suggests another option for making my lizard walk. Walking was a particularly uncertain aspect for this project and more options give me a good safety net. Here instead of shifting weight, the middle legs act like a prop up for the side that needs to be off the ground. This is similar to how I have a nail propping up the lizard in the centre of the body, but this nail doesn’t move up and down. Instead it is used as a pivot point. 
-If I continue to have trouble with making the lizard walk, I could easily implement a see saw style servo in the middle that props up the side that needs to be airborne at that point in the walking cycle. 
+If I continue to have trouble with making the lizard walk, I could easily make the back set of legs act in the same way as the middle legs of Monster, with the third support located in the tail. 
 
 ### Related project 4 & 5 & 6 ###
 I have grouped these together because they are similar and serve a similar role in illustrating alternative ways of visualising heart rates and supporting that my lizard is at least somewhat original. Although no elements of these projects were burrowed, having alternatives is important.
@@ -76,7 +77,7 @@ I have grouped these together because they are similar and serve a similar role 
 [**Pulse**](http://www.jennykang.me/pulse)
 ![Image](pulse.png)
 
-This app uses your heart rate to generate natural fractal images of trees to emotionally connect the user with their heart rate. The project explores the psychology surrounding this imagery which is something I should’ve investigated. With a similar intent of drawing connection between humans and nature, this heart rate visualising app provided an alternative way to visualise heart rate early in the conceptualisation process. It was also more relevant to me when the project still had meditative function in which case, I would have strayed away from a lizard walking to something more abstract and emotionally resonant.  
+This app uses your heart rate to generate natural fractal images of trees to emotionally connect the user with their heart rate. The project explores the psychology surrounding this imagery which is something I should’ve investigated. With a similar intent of drawing connection between humans and nature, this heart rate visualising app provided an alternative way to visualise heart rate early in the conceptualisation process. It was also more relevant to me when the project still had meditative function in which case I would have strayed away from a lizard walking to something more abstract and emotionally resonant.  
 It was also confirmation that there was a tendency to depict heart rate abstractly and not draw a link between heart and animation as strongly as I intend to, justifying my project. 
 
 [**Heart Bot**](https://www.element14.com/community/groups/sensor-technology/blog/2015/01/05/heart-bot-is-a-heartbeat-interactive-art-installation)
@@ -84,7 +85,7 @@ It was also confirmation that there was a tendency to depict heart rate abstract
 ![Image](heartbot.png)
 
 A drawing robot draws a user’s heart rate as a waveform radiating from the centre next to all the other previous users heart rates. This project has a focus on heartrate as an identifier, something that is unique to you. It also looks at heartrate temporally, keeping public record of many people’s heart rates at those moments in time- heart as a timekeeper. This plays into the rhythmic and clocklike paradigms of heart. It uses something we see in a medical context (ECG) as a collaborative medium. 
-The concept of this installation is someone relevant to me, in highlighting the passive nature of the heart, but instead looks at the identifying rather than life giving quality of your heart. Although one could argue the medical connotations of the ECG do carry life and death meanings. 
+The concept of this installation is someone relevant to me in highlighting the passive nature of the heart, but instead looks at the identifying rather than life giving quality of your heart. Although one could argue the medical connotations of the ECG do carry life and death meanings. 
 
 [**Heart Bloom**](http://heartbloom.rogierarents.nl/ddw.html)
 
@@ -112,7 +113,7 @@ I drew a lot on how this reptile moves like where the legs are during contact, w
 Although I had a clear image of the walking cycle from the robot fossil, life reference is still relevant. 
 [This monitor lizard video](https://www.youtube.com/watch?v=t9z80QzM1xE) shows how exaggerated those positions of the head, neck and legs are. Just like the robot fossil, it moves by picking up diagonally opposite legs (back right, front left) and at the same time pushing off with the other two making that are making contact. 
 
-This is in contrast to the walking cycle of mammals, who’s legs are angled underneath the hips rather than out (splayed). It is typical for mammals to walk (although there are other gaits) by picking up legs sequentially. Even if multiple legs may be off the ground at the same time, they are not moved together (back right, front right, back left, front left). This is difficult to describe, but is evidence in this [video of a dog walking]( https://www.youtube.com/watch?v=3Af2GDhRafQ).
+This is in contrast to the walking cycle of mammals, who’s legs are angled underneath the hips rather than out (splayed). It is typical for mammals to walk (although there are other gaits) by picking up legs sequentially. Even if multiple legs may be off the ground at the same time, they are not moved together (back right, front right, back left, front left). This is difficult to describe, but is evident in this [video of a dog walking]( https://www.youtube.com/watch?v=3Af2GDhRafQ).
 
 This is important as a backup walk cycle in case it is necessary for only one side to be airborne at a time and still look natural. 
 
@@ -128,7 +129,7 @@ The suggestions were:
 body heat, blood pressure. The fluctuations in these are too gradual (over the course of hours) I also considered sleep which fits in this category. 
 Breathing, strength (pressure). These are too voluntary. 
 
-My friend also suggested the cooperative concept (like concept 4)- a car which each wheel controlled by a different person’s heart rate. 
+My friend also suggested the cooperative concept (like concept 4)- a car in which each wheel controlled by a different person’s heart rate. 
 
 ## 1.3 Design Concepts ##
 ### Design concept 1: Chosen concept ###
